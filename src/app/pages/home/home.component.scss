@@ -1,0 +1,5 @@
+$h1-color: #3880ff;
+
+h1 {
+  color: var(--ion-color-primary, $h1-color);
+}

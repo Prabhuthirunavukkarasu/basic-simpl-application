@@ -1,0 +1,20 @@
+{
+  "TITLE_40": {
+    "HOME": "Home",
+    "LOGIN": "Login",
+    "ABOUT": "About"
+  },
+  "BUTTON_30": {
+    "LOGIN": "Login"
+  },
+  "DIALOG_TEXT_LONG_30": {
+    "CORPORATE_INFO": "Corporate information",
+    "PRIVACY_POLICY": "Privacy policy",
+    "TERM_OF_USE": "Term of use"
+  },
+  "LINKS_40": {
+    "TERM_OF_USE": "http://www.siemens.com/corp/en/index/terms_of_use.htm",
+    "CORPORATE_INFO": "http://www.siemens.com/corp/en/index/corporate_info.htm",
+    "PRIVACY_POLICY": "http://www.siemens.com/corp/en/index/privacy.htm"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "TITLE_40": {
+    "HOME": "Startseite",
+    "LOGIN": "Anmelden",
+    "ABOUT": "Über"
+  },
+  "BUTTON_30": {
+    "LOGIN": "Anmelden"
+  },
+  "DIALOG_TEXT_LONG_30": {
+    "CORPORATE_INFO": "Impressum",
+    "PRIVACY_POLICY": "Datenschutz",
+    "TERM_OF_USE": "Nutzungsbedingungen"
+  },
+  "LINKS_40": {
+    "TERM_OF_USE": "http://www.siemens.com/corp/de/index/nutzungsbedingungen.htm",
+    "CORPORATE_INFO": "http://www.siemens.com/corp/de/index/impressum.htm",
+    "PRIVACY_POLICY": "http://www.siemens.com/corp/de/index/datenschutz.htm"
+  }
+}

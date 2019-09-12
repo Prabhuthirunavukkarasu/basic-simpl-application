@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{ 'TITLE_40.LOGIN' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <si-login title="SIapplication" icon="assets/icon/favicon.png" (signInClick)="signIn($event)"
+    (forgotPasswordClick)="forgotPassword()" (signUpClick)="signUp()" (infoClick)="info()">
+  </si-login>
+</ion-content>

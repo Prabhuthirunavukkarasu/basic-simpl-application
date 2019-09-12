@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{ 'TITLE_40.ABOUT' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <si-about appName="SIapplication" icon="assets/icon/favicon.png" licenseTitle="OSS Licenses"
+    [licenseText]="licenseText | async" [subheading]="['Version: ' + appVersion + ' - ' + appHash, '© Siemens 2019']"
+    [imprintLink]="{href: 'LINKS_40.CORPORATE_INFO' | translate, title: 'DIALOG_TEXT_LONG_30.CORPORATE_INFO' | translate}"
+    [privacyLink]="{href: 'LINKS_40.PRIVACY_POLICY' | translate, title: 'DIALOG_TEXT_LONG_30.PRIVACY_POLICY' | translate}"
+    [termsLink]="{href: 'LINKS_40.TERM_OF_USE' | translate, title: 'DIALOG_TEXT_LONG_30.TERM_OF_USE' | translate}">
+  </si-about>
+</ion-content>

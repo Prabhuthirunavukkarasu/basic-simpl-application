@@ -1,0 +1,8 @@
+{
+  "name": "s-iapplication",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "a0657233"
+}
