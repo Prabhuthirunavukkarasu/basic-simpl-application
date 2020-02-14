@@ -8,28 +8,20 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
-  },
-  {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
   },
   {
     path: 'about',
     loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)
   },
   {
-    path: 'card',
-    loadChildren: () => import('./pages/card/card.module').then(m => m.CardPageModule)
-  },
-  {
-    path: 'accordion',
-    loadChildren: () => import('./pages/accordion/accordion.module').then(m => m.AccordionPageModule)
-  },
-  {
-    path: 'slider',
-    loadChildren: () => import('./pages/slider/slider.module').then(m => m.SliderPageModule)
+    path: 'server-status',
+    loadChildren: './pages/server-status/server-status.module#ServerStatusPageModule'
   }
 ];
 

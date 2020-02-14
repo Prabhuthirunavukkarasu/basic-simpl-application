@@ -15,12 +15,12 @@ export class AppComponent {
     {
       title: 'TITLE_40.HOME',
       url: '/home',
-      icon: 'home'
+      icon: 'siveillance-home'
     },
     {
       title: 'TITLE_40.ABOUT',
       url: '/about',
-      icon: 'about'
+      icon: 'siveillance-about'
     }
   ];
   constructor(
@@ -31,6 +31,7 @@ export class AppComponent {
   ) {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
+      this.statusBar.hide();
       this.splashScreen.hide();
     });
 

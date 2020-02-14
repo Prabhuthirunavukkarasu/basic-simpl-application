@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { SimplSiShellMobileNgModule } from '@simpl/sishell-mobile-ng';
 
 import { HomeComponent } from './home.component';
 
@@ -13,6 +14,7 @@ import { HomeComponent } from './home.component';
     FormsModule,
     IonicModule,
     TranslateModule,
+    SimplSiShellMobileNgModule,
     RouterModule.forChild([
       {
         path: '',

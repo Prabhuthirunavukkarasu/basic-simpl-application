@@ -13,35 +13,12 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list lines="none">
-    <ion-item>
-      <ion-list-header color="medium">
-        <ion-label>Components</ion-label>
-      </ion-list-header>
-    </ion-item>
-    <ion-item-divider>
-      <ion-label>Existing Simpl components</ion-label>
-    </ion-item-divider>
-    <ion-item (click)="gotoLogin()" detail>
-      <ion-label>Log In Component</ion-label>
-    </ion-item>
-    <ion-item (click)="gotoAbout()" detail>
-      <ion-label>About Component</ion-label>
-    </ion-item>
-    <ion-item (click)="gotoAccordion()" detail>
-      <ion-label>Accordion Component</ion-label>
-    </ion-item>
-    <ion-item (click)="gotoCard()" detail>
-      <ion-label>Message card Component</ion-label>
-    </ion-item>
-    <ion-item (click)="gotoSlider()" detail>
-      <ion-label>Slider Component</ion-label>
-    </ion-item>
-    <ion-item-divider>
-      <ion-label>Ionic components</ion-label>
-    </ion-item-divider>
-    <ion-item detail>
-      <ion-label>Button Component</ion-label>
-    </ion-item>
-  </ion-list>
+  <si-message-card title="Server Status" prompt="" icon="siveillance-dynamic-data" color="primary" (click)="serverStatus()">
+  </si-message-card>
+  <si-message-card title="Card Holders" prompt="" icon="siveillance-cardholders" color="primary">
+  </si-message-card>
+  <si-message-card title="Activity Feed" prompt="" icon="siveillance-activity-feed" color="primary">
+  </si-message-card>
+  <si-message-card title="Access Control" prompt="Description of the prompt goes here" icon="siveillance-access-controller" color="primary">
+  </si-message-card>
 </ion-content>

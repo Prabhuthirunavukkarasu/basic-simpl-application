@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { SimplSiShellMobileNgModule } from '@simpl/sishell-mobile-ng';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +25,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
+    SimplSiShellMobileNgModule,
     IonicModule.forRoot(),
     TranslateModule.forRoot({
       loader: {

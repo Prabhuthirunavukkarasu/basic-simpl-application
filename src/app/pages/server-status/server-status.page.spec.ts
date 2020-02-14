@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AccordionPage } from './accordion.page';
+import { ServerStatusPage } from './server-status.page';
 
-describe('AccordionPage', () => {
-  let component: AccordionPage;
-  let fixture: ComponentFixture<AccordionPage>;
+describe('ServerStatusPage', () => {
+  let component: ServerStatusPage;
+  let fixture: ComponentFixture<ServerStatusPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccordionPage ],
+      declarations: [ ServerStatusPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AccordionPage);
+    fixture = TestBed.createComponent(ServerStatusPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

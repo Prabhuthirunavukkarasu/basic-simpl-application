@@ -10,20 +10,9 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  gotoLogin() {
-    this.router.navigate(['/login']);
+  serverStatus() {
+    this.router.navigate(['/server-status']);
   }
-  gotoAccordion() {
-    this.router.navigate(['/accordion']);
-  }
-  gotoAbout() {
-    this.router.navigate(['/about']);
-  }
-  gotoSlider() {
-    this.router.navigate(['/slider']);
-  }
-  gotoCard() {
-    this.router.navigate(['/card']);
-  }
+
 
 }

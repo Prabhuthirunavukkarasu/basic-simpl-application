@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Server Status
+    </ion-title>
+  </ion-toolbar>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="4" class="ion-text-center">
+        <ion-label>Total</ion-label>
+        <ion-item>
+          <ion-icon slot="start" name="siveillance-about" color=""></ion-icon>
+          <span>{{total}}</span>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <ion-label>Connected</ion-label>
+        <ion-item>
+          <ion-icon slot="start" name="siveillance-connected" color="success"></ion-icon>
+          <span>{{connected}}</span>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <ion-label>Disconnected</ion-label>
+        <ion-item>
+          <ion-icon slot="start" name="siveillance-cancelled" color="danger"></ion-icon>
+          <span>{{disconnected}}</span>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let pac of mockJson; let i = index;">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <ion-item (click)="showDetails(i)">
+              <ion-label slot="start">{{pac.name}}</ion-label>
+              <ion-icon [name]="pac.isConnected ? 'siveillance-connected' : 'siveillance-cancelled'"
+                [color]="pac.isConnected ? 'success' : 'danger'"></ion-icon>
+              <ion-icon id="{{'arrow' + i}}" slot="end" name="arrow-dropdown"></ion-icon>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <div id="{{'Id' + i}}" hidden="false">
+          <ion-row>
+            <ion-col size="12">
+              <ion-item>
+                <ion-list>
+                  <ion-list-header>
+                    <ion-label>General Properties</ion-label>
+                  </ion-list-header>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col>Name</ion-col>
+                      <ion-col>{{pac.properties.general.serverName}}</ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>Description</ion-col>
+                      <ion-col>{{pac.properties.general.description}}</ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>Pacs</ion-col>
+                      <ion-col>{{pac.properties.general.pac}}</ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-list>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <!-- <ion-col size="12">
+              <ion-item>
+                <ion-list>
+                  <ion-list-header>
+                    <ion-label>Connection Properties</ion-label>
+                  </ion-list-header>
+                  <ion-grid >
+                    <ion-row>
+                      <ion-col>Server Name</ion-col>
+                      <ion-col>{{pac.properties.connection.serverName}}</ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>IP Address</ion-col>
+                      <ion-col>{{pac.properties.connection.ipAddress}}</ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>Status</ion-col>
+                      <ion-col>{{pac.properties.connection.isConnected}}</ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-list>
+              </ion-item>
+            </ion-col> -->
+            <ion-col size="12">
+              <ion-item>
+                <ion-list>
+                  <ion-list-header>
+                    <ion-label>Connection Properties</ion-label>
+                  </ion-list-header>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col>Name</ion-col>
+                      <ion-col>{{pac.properties.connection.serverName}}</ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>Description</ion-col>
+                      <ion-col>{{pac.properties.connection.description}}</ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>Pacs</ion-col>
+                      <ion-col>{{pac.properties.connection.pac}}</ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-list>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </div>
+
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

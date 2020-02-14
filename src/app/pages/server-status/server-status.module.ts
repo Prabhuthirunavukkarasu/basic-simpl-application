@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
 import { Routes, RouterModule } from '@angular/router';
 import { SimplSiShellMobileNgModule } from '@simpl/sishell-mobile-ng';
 
-import { IonicModule } from '@ionic/angular';
-
-import { SliderPage } from './slider.page';
+import { ServerStatusPage } from './server-status.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: SliderPage
+    component: ServerStatusPage
   }
 ];
 
@@ -20,9 +19,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    SimplSiShellMobileNgModule
+    SimplSiShellMobileNgModule,
+    RouterModule.forChild(routes)
   ],
-  declarations: [SliderPage]
+  declarations: [ServerStatusPage]
 })
-export class SliderPageModule {}
+export class ServerStatusPageModule { }
